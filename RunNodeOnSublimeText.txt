@@ -1,0 +1,26 @@
+FOLLOWING ARE THE STEPS TO RUN YOUR JAVASCRIPT APPLICATION USING SUBLIME TEXT 2 (FOR WINDOWS USERS ONLY).
+
+STEP 1 :
+Open your sublime text 2 and write the following command-
+
+{
+	"cmd" : ["C:/Program Files/nodejs/node.exe","$file"],
+	"selector": "source.js"
+}
+Note:- Here    C:/Program Files/nodejs/node.exe     is my path where node exists. This is default path, if you have changed it then keep that path in place of this.
+
+STEP 2:
+Save this file as "JavaScript.sublime-build" (without quotes) and save it in the folder  "Sublime-text/packages/User". 
+
+Note:- Saving the written code in 1st step works like this
+             "x.sublime-build" (without quotes), Here 'x' can be any langauge. Like we are focusing on JavaScript then x is replaced by JavaScript, User can replace it with PHP if               one wants to code in PHP, etc.
+
+STEP 3:
+Open a new Tab (using Ctrl+n) and write a small script like this-
+	var title = "Hello World!";
+	console.log(title);
+
+Step 4:
+Now to check whether it is running properly or not, Goto Tools->Build.
+By default it will run the program. In case, if program will not run then go for Tools->Build System->JavaScript.
+Your Script will run and print the message "Hello World!" (without quotes).
